@@ -45,7 +45,7 @@ const Navbar = () => {
             {menuItems.map((item) => (
               <a
                 key={item}
-                href={item === "Contact" ? "#contact-form" : `#${item.toLowerCase()}`}
+                href={item === "Contact" ? "/#contact-form" : `/#${item.toLowerCase()}`}
                 className="relative text-gray-600 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors font-medium group"
               >
                 {item}
