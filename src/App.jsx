@@ -38,6 +38,8 @@ import Inventory from "./components/patient/Inventory";
 import Prescription from "./components/pharmacist/Prescriptions";
 import PharmacistInventory from "./components/pharmacist/Inventory";
 import { Toaster } from "react-hot-toast";
+import { Scroll } from "lucide-react";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 
 // Protected Route Component
@@ -241,6 +243,7 @@ function App() {
     <AuthProvider>
       <AppointmentProvider>
         <Router>
+          <ScrollToTop />
           <div className="App bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100">
             <AppRoutes />
             <Toaster
